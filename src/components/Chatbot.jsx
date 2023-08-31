@@ -27,7 +27,7 @@ const Chatbot = () => {
     if (messages.length === 0) {
       setMessages([...messages, "Hello, Welcome to student info system!"]);
     }
-  }, 3000);
+  }, 1000);
 
   setTimeout(() => {
     if (messages.length === 2) {
