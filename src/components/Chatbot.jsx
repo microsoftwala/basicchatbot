@@ -27,7 +27,7 @@ const Chatbot = () => {
     if (messages.length === 0) {
       setMessages([...messages, "Hello, Welcome to student info system!"]);
     }
-  }, 1000);
+  }, 3000);
 
   setTimeout(() => {
     if (messages.length === 2) {
@@ -45,6 +45,7 @@ const Chatbot = () => {
       setMessages([...messages, "Got it!"]);
     } else if (messages.length === 3) {
       if (name.length !== 0) setMessages([...messages, name]);
+       setName("");
     } else if (messages.length === 5) {
       if (age.length !== 0) setMessages([...messages, age]);
     } else {
