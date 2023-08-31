@@ -45,14 +45,13 @@ const Chatbot = () => {
       setMessages([...messages, "Got it!"]);
     } else if (messages.length === 3) {
       if (name.length !== 0) setMessages([...messages, name]);
-       setName("");
     } else if (messages.length === 5) {
       if (age.length !== 0) setMessages([...messages, age]);
     } else {
       if (name.length !== 0) setMessages([...messages, name]);
-      setName("");
     }
     if (messages.length <= 5) dispatch(setUserName(name, age)); // Store the user's name in Redux store
+     setName("");
   };
 
   const handleNameChange = (event) => {
